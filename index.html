@@ -7,24 +7,69 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-        <h1>Prontuário Eletrônico</h1>
-        <p>Organize atendimentos, cadastre pacientes e registre prontuários de forma rápida e segura.</p>
-        <div class="buttons">
-            <button onclick="window.location.href='login.html'">Começar Agora</button>
-            <button onclick="window.location.href='sobre.html'">Saiba Mais</button>
-        </div>
-    </div>
-</div>
 
-<script>
-window.addEventListener('load', () => {
-    const content = document.querySelector('.hero-content');
-    content.style.opacity = 1;
-    content.style.transform = 'translateY(0)';
-});
-</script>
+<header class="navbar">
+  <nav>
+    <a href="#home">Início</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>Prontuário Eletrônico</h1>
+    <p>Organize atendimentos, cadastre pacientes e registre prontuários de forma rápida e segura.</p>
+    <div class="buttons">
+      <button onclick="window.location.href='#contato'">Contato</button>
+      <button onclick="window.location.href='login.html'">Login Profissional</button>
+    </div>
+  </div>
+</section>
+
+<section id="servicos" class="section">
+  <h2>Funcionalidades</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Cadastro de Pacientes</h3>
+      <p>Registre e gerencie pacientes de forma rápida e segura.</p>
+    </div>
+    <div class="card">
+      <h3>Prontuários Eletrônicos</h3>
+      <p>Visualize e edite prontuários completos com histórico de atendimento.</p>
+    </div>
+    <div class="card">
+      <h3>Relatórios</h3>
+      <p>Gere relatórios detalhados para análises e acompanhamento.</p>
+    </div>
+    <div class="card">
+      <h3>Agenda de Atendimento</h3>
+      <p>Controle horários, consultas e notificações de forma prática.</p>
+    </div>
+  </div>
+</section>
+
+<section id="sobre" class="section">
+  <h2>Sobre o Sistema</h2>
+  <p>O Prontuário Eletrônico foi desenvolvido para facilitar o dia a dia do profissional de saúde, integrando cadastro, histórico, relatórios e agenda em uma única plataforma segura e intuitiva.</p>
+</section>
+
+<section id="contato" class="section">
+  <h2>Contato</h2>
+  <p>Envie suas dúvidas ou solicitações através do formulário abaixo:</p>
+  <form>
+    <input type="text" placeholder="Nome" required><br><br>
+    <input type="email" placeholder="Email" required><br><br>
+    <textarea placeholder="Mensagem" required></textarea><br><br>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2026 Prontuário Eletrônico. Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>
