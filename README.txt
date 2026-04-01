@@ -14,5 +14,3 @@ Importante:
 
 
 Versão mobile aprimorada incluída.
-
-Upgrade mobile com menu hamburguer e refinamentos visuais incluído.

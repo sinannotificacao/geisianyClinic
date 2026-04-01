@@ -7,13 +7,10 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="navbar solid">
+  <header class="navbar">
     <div class="nav-wrapper">
-      <a class="brand dark" href="index.html">Geisiany Clinic</a>
-      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" onclick="document.body.classList.toggle('menu-open'); this.setAttribute('aria-expanded', document.body.classList.contains('menu-open') ? 'true' : 'false');">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="dark-nav mobile-nav">
+      <a class="brand" href="index.html">Geisiany Clinic</a>
+      <nav>
         <a href="index.html">Início</a>
         <a href="sobre.html">Sobre</a>
         <a href="servicos.html">Procedimentos</a>
@@ -27,13 +24,11 @@
 
     <div class="hero-content">
       <span class="tag">Estética Avançada • Beleza com naturalidade</span>
-      <h1>Beleza com naturalidade e sofisticação</h1>
+      <h1>Realçando sua beleza com sofisticação, leveza e cuidado</h1>
       <p>
-        Atendimento personalizado com foco em autoestima, harmonia e resultados
-        elegantes, naturais e femininos.
+        Uma experiência pensada para valorizar sua autoestima com atendimento
+        humanizado, olhar estético refinado e protocolos personalizados.
       </p>
-
-      <div class="hero-proof">Atendimento personalizado • Resultados naturais • Avaliação individual</div>
 
       <div class="hero-buttons">
         <a href="https://wa.me/5537920007691?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação." target="_blank" rel="noopener" class="btn btn-primary">Agendar avaliação</a>
@@ -94,26 +89,6 @@
     </div>
   </section>
 
-  <section class="section testimonials">
-    <div class="section-header">
-      <span class="mini-tag">Experiência</span>
-      <h2>Um atendimento que une técnica, leveza e confiança</h2>
-      <p>Uma clínica pensada para oferecer acolhimento, elegância e uma jornada mais segura do início ao fim.</p>
-    </div>
-
-    <div class="cards testimonials-grid">
-      <article class="card testimonial-card">
-        <p>“Atendimento cuidadoso, delicado e com uma abordagem muito natural.”</p>
-      </article>
-      <article class="card testimonial-card">
-        <p>“Ambiente acolhedor, explicação clara e sensação de confiança em cada detalhe.”</p>
-      </article>
-      <article class="card testimonial-card">
-        <p>“Uma experiência elegante e personalizada, exatamente o que eu procurava.”</p>
-      </article>
-    </div>
-  </section>
-
   <section class="section contact-cta">
     <div class="section-header">
       <span class="mini-tag">Agendamento</span>
@@ -121,7 +96,7 @@
       <p>
         Clique no botão abaixo e fale diretamente pelo WhatsApp.
       </p>
-      <a href="https://wa.me/5537920007691?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação." target="_blank" rel="noopener" class="btn btn-primary">Agendar avaliação</a>
+      <a href="https://wa.me/5537920007691?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação." target="_blank" rel="noopener" class="btn btn-primary">Falar no WhatsApp</a>
     </div>
   </section>
 
@@ -140,15 +115,5 @@
     <span class="wa-icon">✦</span>
     <span class="wa-text">Agendar pelo WhatsApp</span>
   </a>
-
-  <script>
-    document.querySelectorAll('.mobile-nav a').forEach(function(link) {
-      link.addEventListener('click', function() {
-        document.body.classList.remove('menu-open');
-        var btn = document.querySelector('.menu-toggle');
-        if (btn) btn.setAttribute('aria-expanded', 'false');
-      });
-    });
-  </script>
 </body>
 </html>
